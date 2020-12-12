@@ -1,7 +1,15 @@
-# Heartbeat_Classification
+# Heartbeat Classification
 
+As seen in the ggraph below, heart sound frequencies oscillate between 10Hz and 300Hz. 
+
+However, in the case of aortic regurgitacion the frequency can be higher than 400Hz. 
 
 ![](images/heart_freq.jpg)
+
+The dataset is divided into two sets. Set_a comes from iSthethoscope app; set_b comes from DigiScope. 
+After getting these sounds we can preprocess (filter) then to remove the frequencies that are not in a (1,500)Hz interval since those kind of noises are not produced by the heart. 
+
+
 ![](images/transcription_diagram.jpg)
 
 
