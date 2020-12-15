@@ -25,6 +25,14 @@ On the other hand, if we don't weight the classes whenever the NN is confused, i
 
 Since in this case it is preferable to find false negatives instead of false positives, we will not weight the classes.
 
+# Want to test your heart?
+* Go to the folder `inputsound/my_set/` and upload your .wav audios. 
+
+* Then, after running every cell in the Neural_Network notebook, you will see a title that sais "LOADING MY OWN DATA".
+
+* Insert the path for your audio file and get your 
+diagnosis (don't panic if it is not normal, this is not a doctor).
+
 # References:
 * [Agricultural and biological sciences heart sounds.](https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/heart-sounds#:~:text=Although%20the%20human%20ear%20can,from%2020%20to%20500%20Hz)
 
