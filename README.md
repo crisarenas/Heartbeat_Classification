@@ -12,18 +12,25 @@ After getting these sounds we can preprocess (filter) then to remove the frequen
 
 ![](images/transcription_diagram.jpg)
 
-
-# Unbalanced classes problem:
+# Considerations:
+## Unbalanced classes problem:
 As seen in the picture below, the different classes are not balanced. 
 
 ![Unbalanced classes](images/balance.png)
 In order to fix this problem, we can perform a class weight but, would it really make sense?
 
-In the one hand, if we weight the classes, we are saying that the probability of having an abnormal heartbeat is the same from having a healthy heart, which is not true. We would find more false negative (normal beats classified as abnormal beats). 
+In the one hand, if we weight the classes, we are saying that the probability of having an abnormal heartbeat is the same from having a healthy heart, which is not true. We would find more normal beats classified as abnormal beats. 
 
-On the other hand, if we don't weight the classes whenever the NN is confused, it will diagnose a normal beat since its propability is bigger. we would find false positive (abnormal beats classfied as normal beats).
+On the other hand, if we don't weight the classes, whenever the NN is confused, it will diagnose a normal beat since its propability is bigger. We would find more abnormal beats classfied as normal beats.
 
-Since in this case it is preferable to find false negatives instead of false positives, we will not weight the classes.
+We should have this in mind, because if we don't weight the classes, we are being honest with reality, but also, the risk of not finding an abnormal beat is bigger. 
+
+## Artifacts:
+In order to make better predictions, we have not included to artifact sounds(
+friction with clothes for example) in our model. 
+
+So please, be aware of this before you upload your audio file. If it is too noisy, your diagnose won't be good.
+
 
 # Want to test your heart?
 * Go to the folder `inputsound/my_set/` and upload your .wav audios. 
