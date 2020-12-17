@@ -53,7 +53,7 @@ So please, be aware of this before you upload your audio file. If it is too nois
 # Want to test your heart?
 * Go to the folder `inputsound/my_set/` and upload your .wav audios. 
 
-* Then, after running every cell in the Neural_Network notebook, you will see a title that sais "LOADING MY OWN DATA".
+* Then, navigate to "LOADING MY OWN DATA" in the notebook named "5_Predictions".
 
 * Insert the path for your audio file and get your 
 diagnosis (don't panic if it is not normal, this is not a doctor).
